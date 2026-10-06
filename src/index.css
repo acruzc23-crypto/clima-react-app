@@ -1,0 +1,39 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #0f172a;
+  background: linear-gradient(160deg, #38bdf8 0%, #6366f1 100%);
+  min-height: 100vh;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { max-width: 560px; margin: 0 auto; padding: 32px 16px; }
+header { text-align: center; color: white; }
+header h1 { margin: 0 0 4px; font-size: 2rem; }
+header p { margin: 0 0 24px; opacity: .9; }
+.buscador { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.buscador input { flex: 1; min-width: 0; padding: 12px 14px; border-radius: 10px; border: none; font-size: 1rem; }
+.buscador button { padding: 12px 18px; border: none; border-radius: 10px; background: #0f172a; color: white; font-weight: 600; cursor: pointer; }
+.buscador button:disabled { opacity: .6; cursor: wait; }
+.buscador .error { flex-basis: 100%; }
+.error { background: #fee2e2; color: #991b1b; padding: 8px 12px; border-radius: 8px; margin: 0 0 12px; }
+.cargando { color: white; text-align: center; }
+.tarjeta { background: rgba(255,255,255,.92); border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(15,23,42,.15); }
+.actual h2 { margin: 0; font-size: 1.4rem; }
+.actual h2 span { color: #64748b; font-weight: 400; }
+.principal { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
+.icono { font-size: 3.5rem; }
+.temp { font-size: 3.5rem; font-weight: 700; }
+.descripcion { margin: 0 0 12px; color: #334155; }
+.detalles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.detalles li { background: #f1f5f9; border-radius: 10px; padding: 8px; font-size: .85rem; color: #475569; display: flex; flex-direction: column; }
+.detalles strong { color: #0f172a; font-size: 1rem; }
+.tarjeta h3 { margin: 0 0 12px; }
+.pronostico { list-style: none; padding: 0; margin: 0; }
+.pronostico li { display: grid; grid-template-columns: 50px 40px 1fr auto; align-items: center; padding: 8px 0; border-bottom: 1px solid #e2e8f0; }
+.pronostico li:last-child { border-bottom: none; }
+.dia { font-weight: 600; }
+.icono-sm { font-size: 1.4rem; }
+.rango small { color: #64748b; }
+.lluvia { font-size: .85rem; color: #0369a1; }
+footer { text-align: center; color: white; font-size: .85rem; margin-top: 24px; }
+footer a { color: white; }
